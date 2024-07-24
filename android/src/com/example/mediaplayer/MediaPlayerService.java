@@ -19,7 +19,7 @@ import android.util.Log;
 
 import com.example.mediaplayer.MainActivity;
 
-import org.qtproject.example.mediaplayerexample.R;
+//import org.qtproject.example.mediaplayerexample.R;
 
 public class MediaPlayerService extends Service {
     private static final String CHANNEL_ID = "media_playback_channel";

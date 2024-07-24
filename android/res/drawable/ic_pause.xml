@@ -1,5 +1,9 @@
-<ImageView
-    android:id="@+id/imageView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/pause" />
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#000000"
+        android:pathData="M18,18l-8.5-6L18,6v12zm-9-12v12H7V6h2z"/>
+</vector>

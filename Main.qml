@@ -121,7 +121,12 @@ ApplicationWindow {
             mediaPlayer.play()
         }
         //! [6]
-        source: new URL("https://download.qt.io/learning/videos/media-player-example/Qt_LogoMergeEffect.mp4")
+        // source: new URL("https://download.qt.io/learning/videos/media-player-example/Qt_LogoMergeEffect.mp4")
+        source: ".audio.mp3"
+
+        Component.onCompleted: {
+            play()
+        }
     }
 
     //! [3]
@@ -161,9 +166,9 @@ ApplicationWindow {
         opacity: showControls
         // onOpacityChanged can't be used as it is animated and therefore not immediate
         onShowControlsChanged: activityListener.cursorShape = showControls ?
-                              Qt.ArrowCursor : Qt.BlankCursor
+                                   Qt.ArrowCursor : Qt.BlankCursor
 
-        anchors.bottom: parent.bottom
+        anchors.top: parent.top
         anchors.left: parent.left
         anchors.right: parent.right
 

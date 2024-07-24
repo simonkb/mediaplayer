@@ -53,6 +53,7 @@ qt_add_qml_module(mediaplayerexample
         "images/zoom_minimize.svg"
         "images/link.svg"
         "images/loop.svg"
+        "audio.mp3"
 )
 
 target_link_libraries(mediaplayerexample PRIVATE
